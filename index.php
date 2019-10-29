@@ -1,13 +1,11 @@
 <html>
     <head>
-        <title>Aš valdau HTML! <?php print"ir PHP"?></title>
+        <title><?php print 'Aš, ' . date('l') . ' ir PHP!'; ?></title>
     </head>
     <body>
-        <h1><b>Simonas</b> - HTML <?php print"ir PHP"?> asas</h1>
+        <h1><b>Simonas</b> - HTML <?php print 'ir PHP'; ?> asas jau nuo <?php print date('Y') . ' metų'; ?></h1>
         <p>
-            Moku kurti statinį turinį.<br>
-            Atidaryta <?php print date('Y-m-d H:i:s') ?>
+            Viskas prasidėjo <?php print date('m') . ' mėnesio, ' . date('d') . ' dieną!' ?>
         </p>
-        
     </body>
 </html>
