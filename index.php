@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title><?php print 'PHP lydės ir ' . date('Y-m-d', strtotime('+1 day')); ?></title>
+        <title>PHP lydės ir <?php print date('Y-m-d', strtotime('+1 day')); ?></title>
     </head>
     <body>
         <h1>
