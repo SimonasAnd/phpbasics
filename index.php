@@ -5,8 +5,7 @@
             .bomb{
                 background-image: url("https://files.gamebanana.com/img/ico/sprays/4ea33068c0dcc.png");
                 background-size: cover;
-                background-repeat: no-reapeat;
-            /*256 190*/
+                background-repeat: no-repeat;
             }
             
             .size{
@@ -19,6 +18,6 @@
     <body>
         <div class="size bomb">
         </div>
-        <?php print date('s') ?>
+        <?php print date('s') . 's' ?>
     </body>
 </html>
