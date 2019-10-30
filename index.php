@@ -11,19 +11,17 @@
                 height: calc(1.9px * <?php print date('s') ?>);
             }
             
-            .boom00{
+            .boom-00{
                 background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg");
                 background-size: cover;
                 display: block;
                 width:500px;
                 height:500px;
             }
-            
         </style>
     </head>
     <body>
-        <div class="size bomb boom<?php print date('s'); ?>">
-        </div>
+        <div class="size bomb boom-<?php print date('s'); ?>"></div>
         <p><?php print date('s')?></p>
     </body>
 </html>
