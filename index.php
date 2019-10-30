@@ -2,24 +2,46 @@
     <head>
         <title>PHP</title>
         <style>
-            body{
-                background-color: rgb(<?php print rand(0, 255) . ', ' . rand(0, 255) . ', ' . rand(0, 255); ?>);
+            .dice1{
+                display:block;
+                width:112px;
+                height:112px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2c/Alea_1.png");
             }
-            
-            h1{
-                font-size: <?php print rand(15, 50); ?>px;
+            .dice2{
+                display:block;
+                width:112px;
+                height:112px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b8/Alea_2.png");
             }
-            
-            p{
-                color: rgb(<?php print rand(0, 255) . ', ' . rand(0, 255) . ', ' . rand(0, 255); ?>);
+            .dice3{
+                display:block;
+                width:112px;
+                height:112px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2f/Alea_3.png");
             }
-            
+           .dice4{
+                display:block;
+                width:112px;
+                height:112px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8d/Alea_4.png");
+            }
+            .dice5{
+                display:block;
+                width:112px;
+                height:112px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/55/Alea_5.png");
+            }
+            .dice6{
+                display:block;
+                width:112px;
+                height:112px;
+                background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f4/Alea_6.png");
+            }
         </style>
     </head>
     <body>
-        <h1>Aš keičiu savo dydį</h1>
-        <p>
-            Aš keičiu savo spalvą!
-        </p>
+        <div class="dice<?php print rand(1,6) ?>">
+        </div>
     </body>
 </html>
