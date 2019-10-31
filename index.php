@@ -1,24 +1,14 @@
 <?php
-    $string = 'tekstas';
-    $int = 111;
-    $bool = True;
-    $null = null;
-    
-    $li_1 = $string;
-    $li_2 = $int;
-    $li_3 = $bool;
-    $li_4 = $null;
+    $img_src = 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emoji-one/104/face-with-finger-covering-closed-lips_1f92b.png';
 ?>
 <html>
     <head>
         <title>PHP</title>
     </head>
     <body>
-        <ul>
-            <li>String tipas: <?php print $li_1 ?></li>
-            <li>Integer tipas: <?php print $li_2 ?></li>
-            <li>Boolean tipas: <?php print $li_3 ?></li>
-            <li>Null tipas: <?php print $li_4 ?></li>
-        </ul>
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
     </body>
 </html>
