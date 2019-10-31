@@ -7,9 +7,9 @@ $my_money = 100;
 $fuel_total = round($distance * $consumption / 100, 2);
 $price_trip = round($fuel_total * $price_l, 2);
 
-if($price_trip <= $my_money){
+if ($price_trip <= $my_money) {
     $iseis = 'įperkama';
-} else{
+} else {
     $iseis = 'neįperkama';
 }
 
@@ -17,6 +17,7 @@ $h1 = 'Kelionės skaičiuoklė';
 $li_1 = "Nuvažiuota distancija: $distance";
 $li_2 = "Sunaudota $fuel_total l. kuro";
 $li_3 = "Kaina: $price_trip pinigų";
+$li_4 = "Turimi pinigai: $my_money";
 $p = "Išvada: kelionė $iseis";
 ?>
 <html>
@@ -29,6 +30,7 @@ $p = "Išvada: kelionė $iseis";
             <li><?php print $li_1; ?></li>
             <li><?php print $li_2; ?></li>
             <li><?php print $li_3; ?></li>
+            <li><?php print $li_4; ?></li>
         </ul>
         <hr>
         <p><?php print $p; ?></p>
