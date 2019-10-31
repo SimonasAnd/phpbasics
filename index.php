@@ -17,6 +17,6 @@
         <h1><?php print $h1; ?></h1>
         <p><?php print $p_1; ?></p>
         <p><?php print $p_2; ?></p>
-        <h3><?php print $h3; ?></h>
+        <h3><?php print $h3; ?></h3>
     </body>
 </html>
