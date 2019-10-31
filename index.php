@@ -6,7 +6,6 @@
     $h3_1 = "Jei paėmei $sudas_1 jievru";
     $h3_2 = "Su dviem kabančiais grąžinsi $sudas_3";
     $h3_3 = "Su vienu kabančiu grąžinsi $sudas_2";
-    
 ?>
 <html>
     <head>
