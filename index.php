@@ -14,6 +14,7 @@
     <head>
         <title>PHP</title>
     </head>
+    <body>
         <h1><?php print $h1; ?></h1>
         <p><?php print $p_1; ?></p>
         <p><?php print $p_2; ?></p>
