@@ -1,14 +1,21 @@
 <?php
-    $img_src = 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/emoji-one/104/face-with-finger-covering-closed-lips_1f92b.png';
+    $sudas_1 = rand(1, 100);
+    $sudas_2 = rand(101, 200);
+    $sudas_3 = rand(201, 300);
+    
+    $h3_1 = "Jei paėmei $sudas_1 jievru";
+    $h3_2 = "Su dviem kabančiais grąžinsi $sudas_3";
+    $h3_3 = "Su vienu kabančiu grąžinsi $sudas_2";
+    
 ?>
 <html>
     <head>
         <title>PHP</title>
     </head>
     <body>
-        <img src="<?php print $img_src; ?>">
-        <img src="<?php print $img_src; ?>">
-        <img src="<?php print $img_src; ?>">
-        <img src="<?php print $img_src; ?>">
+        <h1>Skolos skaiciuokle</h1>
+        <h3><?php print $h3_1; ?></h3>
+        <h3><?php print $h3_2; ?></h3>
+        <h3><?php print $h3_3; ?></h3>
     </body>
 </html>
