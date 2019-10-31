@@ -12,9 +12,11 @@
         <title>PHP</title>
     </head>
     <body>
-        <h1>Skolos skaiciuokle</h1>
-        <h3><?php print $h3_1; ?></h3>
-        <h3><?php print $h3_2; ?></h3>
-        <h3><?php print $h3_3; ?></h3>
+        <div class="body1">
+            <h1>Skolos skaiciuokle</h1>
+            <h3><?php print $h3_1; ?></h3>
+            <h3><?php print $h3_2; ?></h3>
+            <h3><?php print $h3_3; ?></h3>
+        </div>
     </body>
 </html>
