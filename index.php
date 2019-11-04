@@ -5,19 +5,19 @@ $str_1 = '1';
 $str_2 = '1.23';
 $flt = 1.23;
 
-if($bool == $int){
+if ($bool == $int) {
     $koks_1 = 'Lygūs';
 } elseif ($bool === $int) {
     $koks_1 = 'Identiški';
 }
 
-if($str_1 == $bool){
+if ($str_1 == $bool) {
     $koks_2 = 'Lygūs';
 } elseif ($str_1 === $bool) {
     $koks_2 = 'Identiški';
 }
 
-if($flt == $str_2){
+if ($flt == $str_2) {
     $koks_3 = 'Lygūs';
 } elseif ($flt == $str_2) {
     $koks_3 = 'Identiški';
