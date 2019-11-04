@@ -21,7 +21,7 @@ if ($sunny) {
             .bg_img{
                 width: 150px;
                 height: 150px;
-                background-image: url("<?php print $img_src ?>");
+                background-image: url("<?php print $img_src; ?>");
                 background-size: cover;
             }
         </style>
@@ -29,7 +29,7 @@ if ($sunny) {
     <body>
         <div class="flex">
             <div class="bg_img"></div>
-            <h2><?php print $h2 ?></h2>
+            <h2><?php print $h2; ?></h2>
         </div>
     </body>
 </html>
