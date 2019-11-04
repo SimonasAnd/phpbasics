@@ -6,21 +6,26 @@ $str_2 = '1.23';
 $flt = 1.23;
 
 if ($bool == $int) {
-    $koks_1 = 'Lygūs';
-} elseif ($bool === $int) {
-    $koks_1 = 'Identiški';
+         //if($bool === $int) {'Identiski'} else{ }
+    $koks_1 = $bool === $int ? 'Identiški' : 'Lygūs';
+} else {
+    $koks_1 = 'Joks';
 }
 
 if ($str_1 == $bool) {
     $koks_2 = 'Lygūs';
 } elseif ($str_1 === $bool) {
     $koks_2 = 'Identiški';
+} else {
+    $koks_2 = 'Joks';
 }
 
 if ($flt == $str_2) {
     $koks_3 = 'Lygūs';
 } elseif ($flt === $str_2) {
     $koks_3 = 'Identiški';
+} else {
+    $koks_3 = 'Joks';
 }
 
 $li_1 = "Bool (true) ir Integer (1): $koks_1";
