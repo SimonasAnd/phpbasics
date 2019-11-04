@@ -4,16 +4,17 @@ $grizai_velai = rand(0, 1);
 $grizai_isgeres = rand(0, 1);
 
 if($grizai_velai == 0 && $grizai_isgeres == 0){
-    $h2 = 'Nieko nepadarei';
+    $kaip = 'Nieko nepadarei';
 } elseif($grizai_velai == 1 && $grizai_isgeres == 0) {
-    $h2 = 'Grįžai vėlai';
+    $kaip = 'Grįžai vėlai';
 } elseif($grizai_velai == 0 && $grizai_isgeres == 1){
-    $h2 = 'Grįžai išgėręs';
+    $kaip = 'Grįžai išgėręs';
 } else {
-    $h2 = 'Grįžai vėlai ir išgėręs';
+    $kaip = 'Grįžai vėlai ir išgėręs';
 }
 
 $h1 = 'Buitinė skaičiuoklė';
+$h2 = "Situacija: $kaip";
 
 ?>
 <html>
