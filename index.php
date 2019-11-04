@@ -1,38 +1,35 @@
 <?php
+$sunny = rand(0, 1);
 
-$grizai_velai = rand(0, 1);
-$grizai_isgeres = rand(0, 1);
-$kurmiegosi = 'nemiegosi';
-
-if($grizai_velai){
-    if($grizai_isgeres){
-        $kaip = 'Grįžai vėlai ir išgėręs';
-        $kurmiegosi = 'miegosi';
-    } else {
-        $kaip = 'Grįžai vėlai';
-    }
+if ($sunny) {
+    $img_src = 'https://icon-library.net/images/weather-icon-sunny/weather-icon-sunny-15.jpg';
+    $h2 = 'Saulėta';
 } else {
-    if($grizai_isgeres){
-        $kaip = 'Grįžai išgėręs';
-    } else {
-        $kaip = 'Nieko nepadarei';
-    }
+    $img_src = 'https://icon-library.net/images/cloudy-icon/cloudy-icon-27.jpg';
+    $h2 = 'Debesuota';
 }
-
-
-
-$h1 = 'Buitinė skaičiuoklė';
-$h2 = "Situacija: $kaip";
-$h3 = "Išvada: $kurmiegosi ant sofos";
-
 ?>
 <html>
     <head>
         <title>PHP</title>
+        <style>
+            .flex{
+                display: flex;
+                align-items: center;
+            }
+
+            .bg_img{
+                width: 150px;
+                height: 150px;
+                background-image: url("<?php print $img_src ?>");
+                background-size: cover;
+            }
+        </style>
     </head>
     <body>
-        <h1><?php print $h1; ?></h1>
-        <h2><?php print $h2; ?></h2>
-        <h3><?php print $h3; ?></h3>
+        <div class="flex">
+            <div class="bg_img"></div>
+            <h2><?php print $h2 ?></h2>
+        </div>
     </body>
 </html>
