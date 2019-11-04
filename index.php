@@ -1,46 +1,52 @@
 <?php
-$bool = true;
-$int = 1;
-$str_1 = '1';
-$str_2 = '1.23';
-$flt = 1.23;
+$sunny = rand(0, 1);
+$rainy = rand(0, 1);
 
-if ($bool == $int) {
-         //if($bool === $int) {'Identiski'} else{ }
-    $koks_1 = $bool === $int ? 'Identiški' : 'Lygūs';
+if ($sunny) {
+    $weather_class = 'sunny';
+    $h2 = 'Saulė';
 } else {
-    $koks_1 = 'Joks';
+    if ($rainy) {
+        $weather_class = 'rainy';
+        $h2 = 'Debesuota su lietum';
+    } else {
+        $weather_class = 'cloudy';
+        $h2 = 'Debesuota';
+    }
 }
-
-if ($str_1 == $bool) {
-    $koks_2 = 'Lygūs';
-} elseif ($str_1 === $bool) {
-    $koks_2 = 'Identiški';
-} else {
-    $koks_2 = 'Joks';
-}
-
-if ($flt == $str_2) {
-    $koks_3 = 'Lygūs';
-} elseif ($flt === $str_2) {
-    $koks_3 = 'Identiški';
-} else {
-    $koks_3 = 'Joks';
-}
-
-$li_1 = "Bool (true) ir Integer (1): $koks_1";
-$li_2 = "String (1) ir Boolean (1): $koks_2";
-$li_3 = "Float (1.23) ir String (1.23): $koks_3";
 ?>
 <html>
     <head>
         <title>PHP</title>
+        <style>
+            .flex{
+                display: flex;
+                align-items: center;
+            }
+
+            .img-size{
+                width: 200px;
+                height: 200px;
+                background-size: cover;
+            }
+
+            .sunny{
+                background-image: url("https://www.clipartwiki.com/clipimg/detail/320-3204945_sun-sunny-day-weather-symbol-brightness-icon.png");
+            }
+
+            .rainy{
+                background-image: url("https://image.flaticon.com/icons/png/512/106/106059.png");
+            }
+
+            .cloudy{
+                background-image: url("https://icons-for-free.com/iconfiles/png/512/cloudy+foggy+weather+icon-1320196574869514194.png");
+            }
+        </style>
     </head>
     <body>
-        <ul>
-            <li><?php print $li_1; ?></li>
-            <li><?php print $li_2; ?></li>
-            <li><?php print $li_3; ?></li>
-        </ul>
+        <div class="flex">
+            <div class="<?php print $weather_class; ?> img-size"></div>
+            <h2><?php print $h2; ?></h2>
+        </div>
     </body>
 </html>
