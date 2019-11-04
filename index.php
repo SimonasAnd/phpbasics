@@ -19,7 +19,7 @@ if ($str_1 == $bool) {
 
 if ($flt == $str_2) {
     $koks_3 = 'Lygūs';
-} elseif ($flt == $str_2) {
+} elseif ($flt === $str_2) {
     $koks_3 = 'Identiški';
 }
 
