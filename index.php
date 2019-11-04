@@ -3,11 +3,11 @@
 $grizai_velai = rand(0, 1);
 $grizai_isgeres = rand(0, 1);
 
-if($grizai_velai == 0 && $grizai_isgeres == 0){
+if(!$grizai_velai && !$grizai_isgeres){
     $kaip = 'Nieko nepadarei';
-} elseif($grizai_velai == 1 && $grizai_isgeres == 0) {
+} elseif($grizai_velai && !$grizai_isgeres) {
     $kaip = 'Grįžai vėlai';
-} elseif($grizai_velai == 0 && $grizai_isgeres == 1){
+} elseif(!$grizai_velai&& $grizai_isgeres){
     $kaip = 'Grįžai išgėręs';
 } else {
     $kaip = 'Grįžai vėlai ir išgėręs';
