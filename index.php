@@ -33,9 +33,9 @@ $li_3 = "Float (1.23) ir String (1.23): $koks_3";
     </head>
     <body>
         <ul>
-            <li><?php print $li_1 ?></li>
-            <li><?php print $li_2 ?></li>
-            <li><?php print $li_3 ?></li>
+            <li><?php print $li_1; ?></li>
+            <li><?php print $li_2; ?></li>
+            <li><?php print $li_3; ?></li>
         </ul>
     </body>
 </html>
