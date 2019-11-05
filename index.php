@@ -3,15 +3,13 @@ $months = 12;
 $wallet = 1000;
 $month_income = 700;
 
-for($i = 1; $i<=$months; $i++){
+for ($i = 1; $i <= $months; $i++) {
     $month_expenses = rand(400, 900);
     $wallet = ($wallet + $month_income) - $month_expenses;
 }
 
 $h1 = 'Wallet Forecast';
 $h2 = "Po $months m., prognozuojamas likutis: $wallet";
-
-
 ?>
 <html>
     <head>
