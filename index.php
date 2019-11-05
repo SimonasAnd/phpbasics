@@ -4,12 +4,23 @@ $wallet = 1000;
 $month_income = 700;
 
 for ($i = 1; $i <= $months; $i++) {
-    $month_expenses = rand(400, 900);
-    $wallet = ($wallet + $month_income) - $month_expenses;
+    $month_expenses = rand(600, 1000);
+    $wallet += $month_income - $month_expenses;
+    if($wallet <= 0){
+        $month = $i;
+        break;
+    }
+}
+
+if($wallet <= 0){
+    $h2 = "Atsargiai, $month mėnesį gali baigtis pinigai!";
+} else {
+    $h2 = "Po $months m., prognozuojamas likutis: $wallet";
 }
 
 $h1 = 'Wallet Forecast';
-$h2 = "Po $months m., prognozuojamas likutis: $wallet";
+
+
 ?>
 <html>
     <head>
@@ -20,3 +31,7 @@ $h2 = "Po $months m., prognozuojamas likutis: $wallet";
         <h2><?php print $h2; ?></h2>
     </body>
 </html>
+
+    
+    
+
