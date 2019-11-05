@@ -17,7 +17,7 @@ for($i = 1; $i <= $days; $i++){
     }
 }
 
-$price_ttl = round($count_ttl / 20 * $pack_price, 2);
+$price_ttl = round(ceil($count_ttl / 20) * $pack_price, 2);
 
 $h1 = 'Mano dūmų skaičiuoklė';
 $h2 = "Per $days dienas, surūkysiu $count_ttl cigarečių už $price_ttl eur.";
