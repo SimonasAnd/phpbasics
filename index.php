@@ -1,16 +1,7 @@
 <?php
 $x = rand(1, 10);
-$p = '';
 
 for ($i = 1; $i <= $x; $i++) {
-    $p .= "Tai yra $i-tasis ciklas </br>";
+    var_dump("Tai yra $i-tasis ciklas");
 }
 ?>
-<html>
-    <head>
-        <title>PHP</title>
-    </head>
-    <body>
-        <p><?php print $p; ?></p>
-    </body>
-</html>
