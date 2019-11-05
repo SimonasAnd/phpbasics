@@ -20,7 +20,6 @@ if($wallet <= 0){
 
 $h1 = 'Wallet Forecast';
 
-
 ?>
 <html>
     <head>
