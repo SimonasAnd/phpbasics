@@ -1,24 +1,26 @@
 <?php
-$months = 12;
-$wallet = 1000;
-$month_income = 700;
+$days = 365;
+$pack_price = 3.5;
+$count_ttl = 0;
 
-for ($i = 1; $i <= $months; $i++) {
-    $month_expenses = rand(600, 1000);
-    $wallet += $month_income - $month_expenses;
-    if ($wallet <= 0) {
-        $month = $i;
-        break;
+for($i = 1; $i <= $days; $i++){
+    $busima_diena = date('w', strtotime("+$i days"));
+    if($busima_diena == 0){
+        $cigs_sun = rand(1, 3);
+        $count_ttl += $cigs_sun;
+    } elseif($busima_diena == 6){
+        $cigs_sat = rand(10, 20);
+        $count_ttl += $cigs_sat;
+    } else{
+        $cigs_mon_fri = rand(3, 4);
+        $count_ttl += $cigs_mon_fri;
     }
 }
 
-if ($wallet <= 0) {
-    $h2 = "Atsargiai, $month mėnesį gali baigtis pinigai!";
-} else {
-    $h2 = "Po $months m., prognozuojamas likutis: $wallet";
-}
+$price_ttl = round($count_ttl / 20 * $pack_price, 2);
 
-$h1 = 'Wallet Forecast';
+$h1 = 'Mano dūmų skaičiuoklė';
+$h2 = "Per $days dienas, surūkysiu $count_ttl cigarečių už $price_ttl eur.";
 ?>
 <html>
     <head>
