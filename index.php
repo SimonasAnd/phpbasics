@@ -10,6 +10,8 @@ for ($m = 1; $m <= $months; $m++) {
     $depr_perc += 2;
 }
 
+$car_price_used = round($car_price_used, 2);
+
 $h1 = 'Kiek nuvertės mašina?';
 $h2 = "Naujos mašinos kaina: $car_price_new";
 $h3 = "Po $months mėn., mašinos vertė bus: $car_price_used eur;";
