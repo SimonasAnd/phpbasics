@@ -3,12 +3,12 @@ $months = 24;
 $car_price_new = 30000;
 $depreciation = 2;
 $car_price_used = $car_price_new;
-$depr_perc = 0;
 
 for ($m = 1; $m <= $months; $m++) {
-    $car_price_used *= (1 - $depreciation / 100);
-    $depr_perc += 2;
+    $car_price_used *= 1 - $depreciation / 100;
 }
+
+$depr_perc = round(100-(100*$car_price_used/$car_price_new), 0);
 
 $car_price_used = round($car_price_used, 2);
 
