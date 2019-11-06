@@ -1,16 +1,19 @@
 <?php
-$petrol_in_tank = rand(20, 30);
-$fuel_in_tank = $petrol_in_tank;
-$diesel_limit = 0;
+$months = 24;
+$car_price_new = 30000;
+$depreciation = 2;
+$car_price_used = $car_price_new;
+$depr_perc = 0;
 
-for($i = 1; $i < ($fuel_in_tank*0.1); $i++){
-    $fuel_in_tank++;
-    $diesel_limit++;
+for ($m = 1; $m <= $months; $m++) {
+    $car_price_used *= (1 - $depreciation / 100);
+    $depr_perc += 2;
 }
 
-$h1 = 'Pripylei dyzelio į benz. mašiną';
-$h2 = "Benzino buvo: $petrol_in_tank l.";
-$h3 = "Max dyzelio riba: $diesel_limit l.";
+$h1 = 'Kiek nuvertės mašina?';
+$h2 = "Naujos mašinos kaina: $car_price_new";
+$h3 = "Po $months mėn., mašinos vertė bus: $car_price_used eur;";
+$h4 = "Mašina nuvertės $depr_perc proc.";
 ?>
 <html>
     <head>
@@ -20,6 +23,7 @@ $h3 = "Max dyzelio riba: $diesel_limit l.";
         <h1><?php print $h1; ?></h1>
         <h2><?php print $h2; ?></h2>
         <h3><?php print $h3; ?></h3>
+        <h4><?php print $h4; ?></h4>
     </body>
 </html>
 
