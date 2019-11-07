@@ -1,69 +1,35 @@
 <?php
 
-$metimai = [
+$lenktynes = [
     0 => [
-        'takelio_bukle' => 'normali',
-        
-        'kegliai' => [
-            0 => 1,
-            
-            1 => [
-                0 => 0,
-                
-                1 => 1
-            ],
-            
-            2 => [
-                0 => 0,
-                
-                1 => 0,
-                
-                3 => 1
-            ],
-            
-            3 => [
-                0 => 1,
-                
-                1 => 0,
-                
-                2 => 0,
-                
-                3 => 1
-            ],
-        ],
+        'puse' => 'desine',
+        'stiprumas_laipsn' => 90
     ],
     
     1 => [
-        'takelio_bukle' => 'apmyzta',
-        
-        'kegliai' => [
-            0 => 0,
-            
-            1 => [
-                0 => 0,
-                
-                1 => 0
-            ],
-            
-            2 => [
-                0 => 0,
-                
-                1 => 0,
-                
-                3 => 0
-            ],
-            
-            3 => [
-                0 => 0,
-                
-                1 => 0,
-                
-                2 => 0,
-                
-                3 => 0
-            ],
-        ],
+        'puse' => 'kaire',
+        'stiprumas_laipsn' => 40
+    ],
+    
+    2 => [
+        'puse' => 'desine',
+        'stiprumas_laipsn' => 180
+    ],
+    
+    3 => [
+        'puse' => 'kaire',
+        'stiprumas_laipsn' => 50
+    ],
+    
+    4 => [
+        'puse' => 'desine',
+        'stiprumas_laipsn' => 180
+    ],
+    
+    5 => [
+        'puse' => 'desine',
+        'stiprumas_laipsn' => 45
     ],
 ];
 
-var_dump($metimai);
+var_dump($lenktynes);
