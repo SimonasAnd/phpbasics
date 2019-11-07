@@ -1,37 +1,49 @@
 <?php
 
 $produktai = [
-    [
-        'vardas' => 'Petras',
-        'pavarde' => 'Pizdis',
-        'daiktas' => [
-            [
-                'daikto_pav' => 'telefonas',
-                'daikto_bukle' => 'prapistas'
-            ]
-        ]
+    0 => [
+        0 => [
+            'pavadinimas' => 'kiausiniai',
+            'vienetai' => 3
+        ],
         
+        1 => [
+            'pavadinimas' => 'grietine',
+            'vienetai' => 1
+        ],
+        
+        2 => [
+            'pavadinimas' => 'jogurtas',
+            'vienetai' => 2
+        ],
+        
+        3 => [
+            'pavadinimas' => 'zuvis',
+            'vienetai' => 0
+        ],
     ],
-    [
-        'vardas' => 'Tomas',
-        'pavarde' => 'Ablomas',
-        'daiktas' => [
-            [
-                'daikto_pav' => 'buljonas',
-                'daikto_bukle' => 'naudojamas'
-            ]
-        ]
+    
+    1 => [
+        0 => [
+            'pavadinimas' => 'pienas',
+            'vienetai' => 1
+        ],
+        
+        1 => [
+            'pavadinimas' => 'kefyras',
+            'vienetai' => 0
+        ],
+        
+        2 => [
+            'pavadinimas' => 'degtine',
+            'vienetai' => 2
+        ],
+        
+        3 => [
+            'pavadinimas' => 'keciupas',
+            'vienetai' => 2
+        ],
     ],
-    [
-        'vardas' => 'Ana',
-        'pavarde' => 'Shitkova',
-        'daiktas' => [
-            [
-                'daikto_pav' => 'rulonas',
-                'daikto_bukle' => 'pasibaiges'
-            ]
-        ]
-    ]
 ];
 
 var_dump($produktai);
