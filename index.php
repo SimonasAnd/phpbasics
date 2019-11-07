@@ -34,7 +34,7 @@ $metimai = [
     ],
     
     1 => [
-         'takelio_bukle' => 'apmyzta',
+        'takelio_bukle' => 'apmyzta',
         
         'kegliai' => [
             0 => 0,
