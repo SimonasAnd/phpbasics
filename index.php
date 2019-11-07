@@ -2,17 +2,17 @@
 
 $produktai = [
     [
-        'kiekis' => 'du',
+        'kiekis' => 2,
         'dydis' => 'dideli',
         'tipas' => 'kiausiniai'
     ],
     [
-        'kiekis' => 'vienas',
+        'kiekis' => 1,
         'dydis' => 'mazas',
         'tipas' => 'baklazanas'
     ],
     [
-        'kiekis' => 'vienas',
+        'kiekis' => 1,
         'dydis' => 'didelis',
         'tipas' => 'grietines indelis'
     ]
