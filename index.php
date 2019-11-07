@@ -1,49 +1,69 @@
 <?php
 
-$produktai = [
+$metimai = [
     0 => [
-        0 => [
-            'pavadinimas' => 'kiausiniai',
-            'vienetai' => 3
-        ],
+        'takelio_bukle' => 'normali',
         
-        1 => [
-            'pavadinimas' => 'grietine',
-            'vienetai' => 1
-        ],
-        
-        2 => [
-            'pavadinimas' => 'jogurtas',
-            'vienetai' => 2
-        ],
-        
-        3 => [
-            'pavadinimas' => 'zuvis',
-            'vienetai' => 0
+        'kegliai' => [
+            0 => 1,
+            
+            1 => [
+                0 => 0,
+                
+                1 => 1
+            ],
+            
+            2 => [
+                0 => 0,
+                
+                1 => 0,
+                
+                3 => 1
+            ],
+            
+            3 => [
+                0 => 1,
+                
+                1 => 0,
+                
+                2 => 0,
+                
+                3 => 1
+            ],
         ],
     ],
     
     1 => [
-        0 => [
-            'pavadinimas' => 'pienas',
-            'vienetai' => 1
-        ],
+         'takelio_bukle' => 'apmyzta',
         
-        1 => [
-            'pavadinimas' => 'kefyras',
-            'vienetai' => 0
-        ],
-        
-        2 => [
-            'pavadinimas' => 'degtine',
-            'vienetai' => 2
-        ],
-        
-        3 => [
-            'pavadinimas' => 'keciupas',
-            'vienetai' => 2
+        'kegliai' => [
+            0 => 0,
+            
+            1 => [
+                0 => 0,
+                
+                1 => 0
+            ],
+            
+            2 => [
+                0 => 0,
+                
+                1 => 0,
+                
+                3 => 0
+            ],
+            
+            3 => [
+                0 => 0,
+                
+                1 => 0,
+                
+                2 => 0,
+                
+                3 => 0
+            ],
         ],
     ],
 ];
 
-var_dump($produktai);
+var_dump($metimai);
