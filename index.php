@@ -12,7 +12,7 @@ $produktai = [
         'daiktas' => 'buljonas'
     ],
     [
-        'vardas' => 'Anos Shitkovos',
+        'asmuo' => 'Anos Shitkovos',
         'bukle' => 'pasibaiges',
         'daiktas' => 'rulonas'
     ]
