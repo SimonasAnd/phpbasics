@@ -5,30 +5,31 @@ $produktai = [
         'vardas' => 'Petras',
         'pavarde' => 'Pizdis',
         'daiktas' => [
-            'telefonas'
-        ],
-        'daikto_bukle' => [
-            'prapistas'
+            [
+                'daikto_pav' => 'telefonas',
+                'daikto_bukle' => 'prapistas'
+            ]
         ]
+        
     ],
     [
         'vardas' => 'Tomas',
         'pavarde' => 'Ablomas',
         'daiktas' => [
-            'buljonas'
-        ],
-        'daikto_bukle' => [
-            'naudojamas'
+            [
+                'daikto_pav' => 'buljonas',
+                'daikto_bukle' => 'naudojamas'
+            ]
         ]
     ],
     [
         'vardas' => 'Ana',
         'pavarde' => 'Shitkova',
         'daiktas' => [
-            'rulonas'
-        ],
-        'daikto_bukle' => [
-            'pasibaiges'
+            [
+                'daikto_pav' => 'rulonas',
+                'daikto_bukle' => 'pasibaiges'
+            ]
         ]
     ]
 ];
