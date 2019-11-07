@@ -1,14 +1,50 @@
 <?php
 
-$spalvos = [ //0 - isjungta, 1 - zalia, 2 - geltona, 3 - raudona
-    0 => [1,1,1,1,1,1,1,1],
-    1 => [1,2,2,2,2,2,2,1],
-    2 => [1,2,3,3,3,3,2,1],
-    3 => [1,2,3,2,2,3,2,1],
-    4 => [1,2,3,2,2,3,2,1],
-    5 => [1,2,3,3,3,3,2,1],
-    6 => [1,2,2,2,2,2,2,1],
-    7 => [1,1,1,1,1,1,1,1],
+$foto = [
+    'location' => 'street',
+    'timestamp' => '3am',
+    'player' => [
+        'position' => 'sitting',
+        'status' => 'koma',
+        'equipment' => [
+            'head_armor' => [
+                'color' => 'panda',
+                'type' => 'helmet'
+            ],
+            
+            'chest_armor' => [
+                'color' => 'black',
+                'type' => 'sweatshirt'
+            ],
+            
+            'hand_armor' => [
+                'color' => 'black',
+                'type' => 'gloves'
+            ],
+            
+            'leg_armor' => [
+                'color' => 'camo',
+                'type' => 'cargo pants'
+            ],
+            
+            'feet_armor' => [
+                'color' => 'black/brown',
+                'type' => 'sneakers'
+            ],
+            
+            'weapon_in_hand' => [
+                'right' => [
+                    'size' => '1 liter',
+                    'type' => 'Stalinskaya'
+                ],
+                
+                'left' => [
+                    'size' => '1 liter',
+                    'type' => 'Stalinskaya'
+                ],
+            ],
+        ],
+    ],
 ];
 
-var_dump($spalvos);
+var_dump($foto);
