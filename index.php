@@ -2,19 +2,22 @@
 
 $produktai = [
     [
-        'kiekis' => 2,
-        'dydis' => 'dideli',
-        'tipas' => 'kiausiniai'
+        'vardas' => 'Petro',
+        'pavarde' => 'Pizdio',
+        'koks' => 'prapistas',
+        'kas' => 'telefonas'
     ],
     [
-        'kiekis' => 1,
-        'dydis' => 'mazas',
-        'tipas' => 'baklazanas'
+        'vardas' => 'Tomo',
+        'pavarde' => 'Ablomo',
+        'koks' => 'naudojamas',
+        'kas' => 'buljonas'
     ],
     [
-        'kiekis' => 1,
-        'dydis' => 'didelis',
-        'tipas' => 'grietines indelis'
+        'vardas' => 'Anos',
+        'pavarde' => 'Shitkovos',
+        'koks' => 'pasibaiges',
+        'kas' => 'rulonas'
     ]
 ];
 
